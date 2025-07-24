@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floral Bliss - Bucket Bunga Elegant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .mobile-menu {
+        display: none;
+        animation: fadeIn 0.3s ease-out forwards;
+      }
+      .mobile-menu.active {
+        display: block;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+      .whatsapp-btn:hover {
+        background-color: #25d366;
+        color: white;
+      }
+    </style>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <div
+            class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center mr-2 transition-all duration-300 hover:scale-110"
+          >
+            <i
+              class="fas fa-shopping-basket text-pink-500 transition-all duration-300 hover:rotate-12"
+            ></i>
+          </div>
+          <h1 class="text-xl font-bold text-pink-600">Floral Bliss</h1>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-700 hover:text-pink-500 font-medium"
+            >Beranda</a
+          >
+          <a
+            href="#products"
+            class="text-gray-700 hover:text-pink-500 font-medium"
+            >Produk</a
+          >
+          <a href="#about" class="text-gray-700 hover:text-pink-500 font-medium"
+            >Tentang Kami</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-700 hover:text-pink-500 font-medium"
+            >Kontak</a
+          >
+        </nav>
+
+        <!-- Mobile Hamburger Menu -->
+        <button
+          id="menu-btn"
+          class="md:hidden text-gray-700 focus:outline-none"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Items -->
+      <div
+        id="mobile-menu"
+        class="mobile-menu bg-white w-full px-4 pb-4 md:hidden"
+      >
+        <a href="#home" class="block py-2 text-gray-700 hover:text-pink-500"
+          >Beranda</a
+        >
+        <a href="#products" class="block py-2 text-gray-700 hover:text-pink-500"
+          >Produk</a
+        >
+        <a href="#about" class="block py-2 text-gray-700 hover:text-pink-500"
+          >Tentang Kami</a
+        >
+        <a href="#contact" class="block py-2 text-gray-700 hover:text-pink-500"
+          >Kontak</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="bg-gradient-to-b from-pink-50 to-white py-16 md:py-24"
+    >
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center"
+      >
+        <div
+          class="md:w-1/2 mb-10 md:mb-0 animate-fadeIn"
+          style="animation-delay: 0.2s"
+        >
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Bucket Bunga Elegant
+            <span class="text-pink-500">Untuk Setiap Momen</span>
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Hadiahkan kebahagiaan dengan koleksi bucket bunga premium kami,
+            dipadu dengan estetika modern untuk semua kesempatan.
+          </p>
+          <a
+            href="#products"
+            class="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-8 rounded-full transition duration-300 inline-block"
+            >Lihat Koleksi</a
+          >
+        </div>
+        <div class="md:w-1/2">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/de8b1c90-6fb1-4be8-aaff-fafc0909e356.png"
+            alt="Bucket bunga elegan berisi mawar merah muda dan putih dalam kemasan premium dengan pita satin"
+            class="rounded-lg shadow-lg w-full h-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            Koleksi Bucket Bunga
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Pilihan bucket bunga terbaik untuk hari istimewa Anda
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Product 1 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 transform hover:scale-[1.02] animate-fadeIn"
+            style="animation-delay: 0.1s"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/93e4c963-72e1-4ca0-8b1b-183237cb03ea.png"
+                alt="Bucket bunga klasik dengan mawar merah muda dan baby breath dalam kemasan anyaman rotan"
+                class="w-full h-64 object-cover transition-transform duration-500 hover:scale-105"
+              />
+              <div
+                class="absolute top-0 right-0 bg-pink-500 text-white text-xs font-bold px-2 py-1 m-2 rounded"
+              >
+                Terlaris
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Bucket Mawar Elegant
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Bucket bunga dengan 20 tangkai mawar segar warna pastel dan
+                hiasan baby breath.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold text-pink-500">Rp 250.000</span>
+                <button
+                  onclick="orderProduct('Bucket Mawar Elegant')"
+                  class="whatsapp-btn border border-pink-500 text-pink-500 hover:text-white font-medium py-2 px-4 rounded-full transition duration-300 flex items-center"
+                >
+                  <i class="fab fa-whatsapp mr-2"></i> Pesan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c3d6e5f6-9194-468b-baaf-d1bffed1991d.png"
+                alt="Bucket bunga premium dengan peony merah muda dan daun eucalyptus dalam wadah keramik putih"
+                class="w-full h-64 object-cover"
+              />
+              <div
+                class="absolute top-0 right-0 bg-pink-500 text-white text-xs font-bold px-2 py-1 m-2 rounded"
+              >
+                Baru
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Bucket Peony Luxe
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Bucket bunga premium dengan peony warna pastel dan daun
+                eucalyptus yang segar.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold text-pink-500">Rp 350.000</span>
+                <button
+                  onclick="orderProduct('Bucket Peony Luxe')"
+                  class="whatsapp-btn border border-pink-500 text-pink-500 hover:text-white font-medium py-2 px-4 rounded-full transition duration-300 flex items-center"
+                >
+                  <i class="fab fa-whatsapp mr-2"></i> Pesan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/57c495b3-d5c9-4141-bae4-21bbe6bcca9e.png"
+                alt="Bucket bunga minimalis dengan tulip putih dan ranting kering dalam vas kayu modern"
+                class="w-full h-64 object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Bucket Minimalist
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Bucket bunga minimalis dengan tulip putih elegan dalam wadah
+                kayu modern.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold text-pink-500">Rp 300.000</span>
+                <button
+                  onclick="orderProduct('Bucket Minimalist')"
+                  class="whatsapp-btn border border-pink-500 text-pink-500 hover:text-white font-medium py-2 px-4 rounded-full transition duration-300 flex items-center"
+                >
+                  <i class="fab fa-whatsapp mr-2"></i> Pesan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1bc94b25-62e0-43ec-b91d-081fb6162da5.png"
+                alt="Bucket bunga romantis dengan mawar merah tua dan bunga gypsophila dalam keranjang anyaman"
+                class="w-full h-64 object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Bucket Romantic
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Bucket bunga romantis dengan mawar merah dan gypsophila untuk
+                hari spesial.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold text-pink-500">Rp 280.000</span>
+                <button
+                  onclick="orderProduct('Bucket Romantic')"
+                  class="whatsapp-btn border border-pink-500 text-pink-500 hover:text-white font-medium py-2 px-4 rounded-full transition duration-300 flex items-center"
+                >
+                  <i class="fab fa-whatsapp mr-2"></i> Pesan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dc887793-2a16-438a-a849-fd08529d4952.png"
+                alt="Bucket bunga mewah dengan anggrek putih dan daun monstera dalam vas kaca tinggi"
+                class="w-full h-64 object-cover"
+              />
+              <div
+                class="absolute top-0 right-0 bg-pink-500 text-white text-xs font-bold px-2 py-1 m-2 rounded"
+              >
+                Premium
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Bucket Orchid Premium
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Bucket bunga mewah dengan anggrek putih segar dalam vas kaca
+                elegan.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold text-pink-500">Rp 450.000</span>
+                <button
+                  onclick="orderProduct('Bucket Orchid Premium')"
+                  class="whatsapp-btn border border-pink-500 text-pink-500 hover:text-white font-medium py-2 px-4 rounded-full transition duration-300 flex items-center"
+                >
+                  <i class="fab fa-whatsapp mr-2"></i> Pesan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300"
+          >
+            <div class="relative overflow-hidden">
+              <img
+                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/31e7bbcb-9547-4180-8959-e1c02fc43778.png"
+                alt="Bucket bunga kecil dengan bunga krisan warna-warni dalam wadah mini untuk meja"
+                class="w-full h-64 object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Bucket Meja Mini
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Bucket bunga kecil untuk hiasan meja dengan bunga krisan
+                warna-warni segar.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold text-pink-500">Rp 180.000</span>
+                <button
+                  onclick="orderProduct('Bucket Meja Mini')"
+                  class="whatsapp-btn border border-pink-500 text-pink-500 hover:text-white font-medium py-2 px-4 rounded-full transition duration-300 flex items-center"
+                >
+                  <i class="fab fa-whatsapp mr-2"></i> Pesan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-pink-50">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3fdcbfe7-dc19-4167-a29d-623a7358b446.png"
+              alt="Toko bunga modern dengan rak-rak kayu diisi berbagai bucket bunga cantik dan tanaman hias"
+              class="rounded-lg shadow-lg w-full h-auto"
+            />
+          </div>
+          <div class="md:w-1/2">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">
+              Tentang Floral Bliss
+            </h2>
+            <p class="text-gray-600 mb-4">
+              Floral Bliss adalah toko bunga modern yang mengkhususkan diri
+              dalam pembuatan bucket bunga elegan untuk berbagai kesempatan.
+              Kami percaya bahwa bunga adalah bahasa universal untuk
+              mengungkapkan perasaan.
+            </p>
+            <p class="text-gray-600 mb-6">
+              Setiap bucket bunga kami dirancang oleh florist berpengalaman
+              dengan bahan-bahan pilihan untuk memastikan kualitas dan kesegaran
+              yang optimal.
+            </p>
+            <div class="flex flex-wrap">
+              <div class="w-1/2 mb-4">
+                <div class="flex items-center">
+                  <div
+                    class="w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-heart text-pink-500"></i>
+                  </div>
+                  <span class="text-gray-700">100% Bunga Segar</span>
+                </div>
+              </div>
+              <div class="w-1/2 mb-4">
+                <div class="flex items-center">
+                  <div
+                    class="w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-gem text-pink-500"></i>
+                  </div>
+                  <span class="text-gray-700">Desain Premium</span>
+                </div>
+              </div>
+              <div class="w-1/2 mb-4">
+                <div class="flex items-center">
+                  <div
+                    class="w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-truck text-pink-500"></i>
+                  </div>
+                  <span class="text-gray-700">Pengiriman Cepat</span>
+                </div>
+              </div>
+              <div class="w-1/2 mb-4">
+                <div class="flex items-center">
+                  <div
+                    class="w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-headset text-pink-500"></i>
+                  </div>
+                  <span class="text-gray-700">Layanan 24/7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">Hubungi Kami</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Kami siap membantu Anda untuk menemukan bucket bunga sempurna untuk
+            momen spesial Anda
+          </p>
+        </div>
+        <div class="max-w-4xl mx-auto bg-pink-50 rounded-lg p-8 shadow-sm">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-bold text-gray-800 mb-4">
+                Informasi Kontak
+              </h3>
+              <div class="mb-6">
+                <div class="flex items-start mb-4">
+                  <div
+                    class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-map-marker-alt text-pink-500"></i>
+                  </div>
+                  <div>
+                    <p class="font-medium text-gray-700">Alamat</p>
+                    <p class="text-gray-600">
+                      Jl. Bunga Indah No. 123, Jakarta
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start mb-4">
+                  <div
+                    class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-phone-alt text-pink-500"></i>
+                  </div>
+                  <div>
+                    <p class="font-medium text-gray-700">Telepon</p>
+                    <p class="text-gray-600">+62 812 3456 7890</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-envelope text-pink-500"></i>
+                  </div>
+                  <div>
+                    <p class="font-medium text-gray-700">Email</p>
+                    <p class="text-gray-600">info@floralbliss.com</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-700 mb-3">Jam Operasional</h4>
+                <p class="text-gray-600 mb-1">Senin-Jumat: 09.00 - 20.00</p>
+                <p class="text-gray-600">Sabtu-Minggu: 10.00 - 18.00</p>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-800 mb-4">
+                Pesan via WhatsApp
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Kirim pesan langsung ke WhatsApp kami untuk pemesanan cepat atau
+                konsultasi produk.
+              </p>
+              <a
+                href="https://wa.me/6281234567890"
+                class="whatsapp-btn bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-full transition duration-300 inline-flex items-center justify-center"
+              >
+                <i class="fab fa-whatsapp text-xl mr-3"></i> Chat via WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4 flex items-center">
+              <div
+                class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center mr-2"
+              >
+                <i class="fas fa-shopping-basket text-pink-500"></i>
+              </div>
+              Floral Bliss
+            </h3>
+            <p class="text-gray-400 mb-4">
+              Toko bunga premium dengan koleksi bucket bunga elegan untuk semua
+              kesempatan.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Produk</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Bucket Mawar</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Bucket Peony</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Bucket Minimalis</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Bucket Premium</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Tautan Cepat</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Beranda</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Produk</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Kontak</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Berlangganan</h4>
+            <p class="text-gray-400 mb-4">
+              Dapatkan update produk terbaru dan promo menarik langsung ke email
+              Anda.
+            </p>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Alamat email"
+                class="bg-gray-700 text-white px-4 py-2 rounded-l focus:outline-none w-full"
+              />
+              <button
+                class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-r"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>© 2023 Floral Bliss. Seluruh hak cipta dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize animations
+      AOS.init({
+        duration: 800,
+        easing: "ease-out-quad",
+        once: true,
+      });
+
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", function () {
+        mobileMenu.classList.toggle("active");
+      });
+
+      // WhatsApp order function
+      function orderProduct(productName) {
+        const whatsappNumber = "6281547678682";
+        const message = `Halo Floral Bliss, saya ingin memesan ${productName}. Bisa info detail dan ketersediaannya?`;
+        const encodedMessage = encodeURIComponent(message);
+        window.open(
+          `https://wa.me/${whatsappNumber}?text=${encodedMessage}`,
+          "_blank"
+        );
+      }
+    </script>
+  </body>
+</html>
